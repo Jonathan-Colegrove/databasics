@@ -72,8 +72,8 @@ done.
     2125
 
 - [ ] How much was spent on books?
-    select sum(price) from items, orders where category like "%Book%";
-    22333857
+      select sum(price) from items, orders where items.id = orders.id and category like "%Book%";
+      59241
 
 
 - [ ] Simulate buying an item by inserting a User for yourself and an Order for that User.
