@@ -72,11 +72,6 @@ done.
     2125
 
 - [ ] How much was spent on books?
-    select sum(price) from items, orders where orders.user_id = items.id and category like "%Book%";
-    165702
-
-    or
-
     select sum(price) from items, orders where category like "%Book%";
     22333857
 
