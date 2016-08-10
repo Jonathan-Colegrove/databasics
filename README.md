@@ -83,6 +83,12 @@ done.
 
 ## Adventure Mode
 
-- [ ] What item was ordered most often? Grossed the most money?
+- [ ] What item was ordered most often?
+    select item_id, quantity from orders order by quantity desc limit 1;
+      item_id     quantity  
+      ----------  ----------
+      66          10
+
+- [ ] Grossed the most money?
 - [ ] What user spent the most?
 - [ ] What were the top 3 highest grossing categories?
